@@ -61,13 +61,14 @@ public class DrawFigures1 {
 	}
 	
 	public static void draw_US_flag() {
-		System.out.println("+------+");
-        System.out.println("|      |");
-        System.out.println("|      |");
-        System.out.println("+------+");
+		draw_square();
         System.out.println("|United|");
         System.out.println("|States|");
-        System.out.println("+------+");
+		draw_square();
+	}
+	
+	public static void draw_square() {
+		System.out.println("+------+");
         System.out.println("|      |");
         System.out.println("|      |");
         System.out.println("+------+");
