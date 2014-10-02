@@ -8,7 +8,11 @@ public class Mod {
 		int seconds = Time%60;   
 		
 		System.out.println(hours+":"+ mins+":"+seconds);
-		System.out.println(Time + " seconds has "+ hours + " hours, " + mins+" minutes, and "+seconds+" seconds");
+		if(hours<1){
+			System.out.println(Time + " seconds has "+ hours + " hours, " + mins+" minutes, and "+seconds+" seconds");
+		} else {
+			System.out.println(Time + " seconds has "+ hours + " hour, " + mins+" minutes, and "+seconds+" seconds");
+		}
 
 	}
 
