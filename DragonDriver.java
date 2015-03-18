@@ -149,7 +149,7 @@ public class DragonDriver {
 		dragons.add(liberty);
 		
 		//for(int i=0;i<=dragons.size();i++) {
-		
+			System.out.println("Before Changes");
 			System.out.println(dragons);
 			System.out.println("===================================================================Dragons===========================================================");
 			System.out.println("   (  )   /\\   _                 (     ");
@@ -194,12 +194,26 @@ public class DragonDriver {
 			d1.breatheFire(d2);
 			d1.toggleMouth();
 			d1.hit();
+			d1.setWingType(ku.getWingType());
+			d1.setBreathFire(ku.isBreathFire());
+			d1.setAccessories(ku.getAccessories());
+			d1.setSnakelike(ku.isSnakelike());
+			d1.setHealth(ku.getHealth());
+			d1.setTailLength(ku.getTailLength());
+			d1.setWingType(ku.getWingType());
+			d1.setWingType(ku.getWingType());
+			d1.setWingType(ku.getWingType());
+			
+			
+			
 			d1.breatheFire(d2);
 			System.out.println(d1);
 			System.out.println(d2);
-		d1.setWingType("Fan");
+			d1.setWingType("Fan");
 		
 			d2.heal(40);
+			System.out.println("After changes");
+			System.out.println(dragons);
 		}
 			
 	
