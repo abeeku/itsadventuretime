@@ -4,6 +4,8 @@ import java.util.Arrays;
 public class Dragon {
 	int tailLength;
 	String name;
+	static int count;
+	int ID;
 	boolean mouthOpen;
 	int health;
 	String wingType;
@@ -38,6 +40,9 @@ public class Dragon {
 		setMouthOpen(mO);
 		setSnakelike(iS);
 		setHealth(100);
+
+		count++;
+		ID = count;
 	}
 	
 	
@@ -50,7 +55,7 @@ public class Dragon {
 	}
 
 	public String toString() {
-		return "\nDragon - "+ name +
+		return "\nDragon "+ID+" - "+ name +
 				"\n\t   |_____Tail Length: " + tailLength +" centimeters"+ 
 				"\n\t\t Mouth Open: " + mouthOpen
 				+ "\n\t\t Health: " + health + " points"+

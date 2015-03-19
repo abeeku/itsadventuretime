@@ -6,6 +6,8 @@ public class DragonDriver {
 
 	public static void main(String[] args) {
 		ArrayList<Dragon> dragons = new ArrayList<Dragon>();
+		System.out.println("===================================================================Dragons===========================================================");
+		
 		Dragon mark = new Dragon(
 				"Mark",
 				200,
@@ -136,23 +138,22 @@ public class DragonDriver {
 				
 				);
 		
-		dragons.add(ku);
-		dragons.add(festus);
-		dragons.add(kyle);
-		dragons.add(christian);
-		dragons.add(chrissy);
-		dragons.add(eylin);
-		dragons.add(mark);
-		dragons.add(yoli);
-		dragons.add(franchesca);
-		dragons.add(richard);
-		dragons.add(evan);
-		dragons.add(liberty);
+		dragons.add(ku);System.out.println(ku);sleep();
+		dragons.add(festus);System.out.println(festus);sleep();
+		dragons.add(kyle);System.out.println(kyle);sleep();
+		dragons.add(christian);System.out.println(christian);sleep();
+		dragons.add(chrissy);System.out.println(chrissy);sleep();
+		dragons.add(eylin);System.out.println(eylin);sleep();
+		dragons.add(mark);System.out.println(mark);sleep();
+		dragons.add(yoli);System.out.println(yoli);sleep();
+		dragons.add(franchesca);System.out.println(franchesca);sleep();
+		dragons.add(richard);System.out.println(richard);sleep();
+		dragons.add(evan);System.out.println(evan);sleep();
+		dragons.add(liberty);System.out.println(liberty);sleep();
 		
 		//for(int i=0;i<=dragons.size();i++) {
 			System.out.println("Before Changes");
 			System.out.println(dragons);
-			System.out.println("===================================================================Dragons===========================================================");
 			System.out.println("   (  )   /\\   _                 (     ");
 			System.out.println("    \\ |  (  \\ ( \\.(               )                      _____");
 			System.out.println("  \\  \\ \\  `  `   ) \\             (  ___                 / _   \\");
@@ -217,7 +218,7 @@ public class DragonDriver {
 			System.out.println("After changes");
 			System.out.println(dragons);
 			
-			System.out.println("Do you want to make your own dragon?");
+			System.out.println("Do you want to make your own dragon?(Hint: say \"YES!\") ");
 			
 			Scanner s = new Scanner(System.in);
 			Scanner s2 = new Scanner(System.in);
@@ -256,5 +257,13 @@ public class DragonDriver {
 		}
 			
 	
+	public static void sleep() {
+		
+		try {
+		    Thread.sleep(2000);                 //1000 milliseconds is one second.
+		} catch(InterruptedException ex) {
+		    Thread.currentThread().interrupt();
+		}
+	}
 
 }
