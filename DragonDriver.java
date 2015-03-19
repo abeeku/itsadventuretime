@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class DragonDriver {
@@ -193,6 +194,7 @@ public class DragonDriver {
 			Dragon d2 = new Dragon("Rick James",70,true,"wide",true,(new String[] {"hat","boots"}),false);
 			d1.breatheFire(d2);
 			d1.toggleMouth();
+			d1.setName(ku.getName());
 			d1.hit();
 			d1.setWingType(ku.getWingType());
 			d1.setBreathFire(ku.isBreathFire());
@@ -214,6 +216,43 @@ public class DragonDriver {
 			d2.heal(40);
 			System.out.println("After changes");
 			System.out.println(dragons);
+			
+			System.out.println("Do you want to make your own dragon?");
+			
+			Scanner s = new Scanner(System.in);
+			Scanner s2 = new Scanner(System.in);
+			Scanner s3 = new Scanner(System.in);
+			Scanner s4 = new Scanner(System.in);
+			
+			if (s.nextLine().equals("YES!")){
+				System.out.print("Name: ");
+				String name = s.nextLine();
+				System.out.print("Tail length: ");
+				int tL = s.nextInt();
+				System.out.print("Mouth Open?(true/false): ");
+				boolean mO = s.nextBoolean();
+				System.out.print("Wing Type: ");
+				String wT = s2.nextLine();
+				System.out.print("Is Snakelike?(true/false): ");
+				boolean iS = s.nextBoolean();
+				String [] acc = new String[] {};
+				System.out.print("Accessories (Y/N): ");
+				if(s3.nextLine().equals("Y")){
+					System.out.println("Enter all your accessories seperated by commas:");
+					String val = s4.nextLine();
+					 acc = val.split(",");
+				} else {
+					acc = new String[] {};
+				}
+				System.out.print("Breathes Fire?(true/false): ");
+				boolean bf = s.nextBoolean();
+				System.out.println("Your dragon is ready..........");
+				Dragon custom = new Dragon(name,tL,mO,wT,iS,acc,bf);
+				System.out.println(custom);
+				
+			}else {
+				System.out.println("Thats too bad. :( Youre missing out");
+			};
 		}
 			
 	

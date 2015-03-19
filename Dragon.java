@@ -56,8 +56,8 @@ public class Dragon {
 				+ "\n\t\t Health: " + health + " points"+
 				"\n\t\t Wing Type: " + wingType
 				+ "\n\t\t Accessories: " + Arrays.toString(accessories)
-				+ "\n\t\t BreathFire: " + breathFire +
-				"\n\t\t Snakelike: " + isSnakelike
+				+ "\n\t\t Breathes Fire?: " + breathFire +
+				"\n\t\t Snakelike?: " + isSnakelike
 				;
 	}
 
