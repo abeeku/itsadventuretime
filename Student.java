@@ -30,7 +30,15 @@ public class Student {
         else gradeLevel = 0;
     }
     
-    public String toString() {
+    public double getGpa() {
+		return gpa;
+	}
+
+	public int getGradeLevel() {
+		return gradeLevel;
+	}
+
+	public String toString() {
         return lastName+", "+firstName+"\nGPA: "+gpa+"\n"+"Grade Level: "+gradeLevel+" id # "+studID;
     }
     
