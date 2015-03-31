@@ -4,6 +4,7 @@
  */
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class student_runner_Student
 {
@@ -30,7 +31,7 @@ public class student_runner_Student
 		goodStudents.add(s4);
 		
 		for(int i=goodStudents.size()-1;i>=0;i--) {
-			System.out.println(goodStudents.get(i).getGpa());
+			//System.out.println(goodStudents.get(i).getGpa());
 			if(goodStudents.get(i).getGpa()<2.0){
 				lowStudents.add(goodStudents.get(i));
 				
@@ -41,7 +42,17 @@ public class student_runner_Student
 		System.out.println("Good Students\n "+goodStudents);
 		
 		System.out.println("Students that need some work\n"+lowStudents);
-		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Make a new Student...");
+		System.out.print("First Name: ");
+		String fname = scan.nextLine();
+		System.out.print("Last Name: ");
+		String lname = scan.nextLine();
+		System.out.print("Grade Level: ");
+		int gL = scan.nextInt();
+		System.out.print("GPA: ");
+		double gpa = scan.nextDouble();
+		System.out.println(new Student(fname,lname,gL,gpa));
 	}
 
 }

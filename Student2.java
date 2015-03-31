@@ -26,8 +26,8 @@ public class Student extends Person {
     }
     
     public void setgradeLevel(int gL){
-        if(gL>=0 && gL<=12) level = gL;
-        else level = 0;
+        if(gL>=0 && gL<=12) gradeLevel = gL;
+        else gradeLevel = 0;
     }
     
     public double getGpa() {
@@ -39,7 +39,7 @@ public class Student extends Person {
 	}
 
 	public String toString() {
-        return super.toString()+"Grade Level: "+level+"\n   GPA: "+gpa+"\n   "+"\n   ID #:   "+studentId;
+        return super.toString()+"\n------------------------------------------\nStudent Stats: \n\tGPA: "+gpa+"\n\t"+"Grade Level: "+level+"\n    ID #: "+studentId;
     }
     
 }

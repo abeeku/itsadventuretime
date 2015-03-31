@@ -144,15 +144,19 @@ public class DragonDriver {
 		dragons.add(christian);System.out.println(christian);sleep();
 		dragons.add(chrissy);System.out.println(chrissy);sleep();
 		dragons.add(eylin);System.out.println(eylin);sleep();
+		dragons.add(imani);System.out.println(eylin);sleep();
 		dragons.add(mark);System.out.println(mark);sleep();
 		dragons.add(yoli);System.out.println(yoli);sleep();
+		dragons.add(jillian);System.out.println(jillian);sleep();
+		dragons.add(anthony);System.out.println(anthony);sleep();
+		dragons.add(prince);System.out.println(prince);sleep();
 		dragons.add(franchesca);System.out.println(franchesca);sleep();
 		dragons.add(richard);System.out.println(richard);sleep();
 		dragons.add(evan);System.out.println(evan);sleep();
 		dragons.add(liberty);System.out.println(liberty);sleep();
 		
 		//for(int i=0;i<=dragons.size();i++) {
-			System.out.println("Before Changes");
+			System.out.println("Before Changes.....");
 			System.out.println(dragons);
 			System.out.println("   (  )   /\\   _                 (     ");
 			System.out.println("    \\ |  (  \\ ( \\.(               )                      _____");
@@ -167,29 +171,7 @@ public class DragonDriver {
 			System.out.println(" , x / ( '  . / .  /                                      |           \\   /");
 			System.out.println("    /  /  _/ /    +                                      /              \\/");
 			System.out.println("   '  (__/                                             /                  \\");
-			System.out.println("                     /\\         /\\__");
-			System.out.println("                   // \\       (  0 )_____/\\            __");
-			System.out.println("                  // \\ \\     (vv          o|          /^v\\");
-			System.out.println("                //    \\ \\   (vvvv  ___-----^        /^^/\\vv\\");
-			System.out.println("              //  /     \\ \\ |vvvvv/               /^^/    \\v\\");
-			System.out.println("             //  /       (\\\\/vvvv/              /^^/       \\v\\");
-			System.out.println("            //  /  /  \\ (  /vvvv/              /^^/---(     \\v\\");
-			System.out.println("           //  /  /    \\( /vvvv/----(O        /^^/           \\v\\");
-			System.out.println("          //  /  /  \\  (/vvvv/               /^^/             \\v|");
-			System.out.println("        //  /  /    \\( vvvv/                /^^/               ||");
-			System.out.println("       //  /  /    (  vvvv/                 |^^|              //");
-			System.out.println("      //  / /    (  |vvvv|                  /^^/            //");
-			System.out.println("     //  / /   (    \\vvvvv\\          )-----/^^/           //");
-			System.out.println("    // / / (          \\vvvvv\\            /^^^/          //");
-			System.out.println("   /// /(               \\vvvvv\\        /^^^^/          //");
-			System.out.println("  ///(              )-----\\vvvvv\\    /^^^^/-----(      \\\\");
-			System.out.println(" //(                        \\vvvvv\\/^^^^/               \\\\");
-			System.out.println("/(                            \\vvvv^^^/                 //");
-			System.out.println("                                \\vv^/         /        //");
-			System.out.println("                                             /<______//");
-			System.out.println("                                            <<<------/");
-			System.out.println("                                             \\<");
-			System.out.println("                                               \\");
+		
 			Dragon d1 = new Dragon();
 			dragons.add(d1);
 			Dragon d2 = new Dragon("Rick James",70,true,"wide",true,(new String[] {"hat","boots"}),false);
@@ -215,7 +197,30 @@ public class DragonDriver {
 			d1.setWingType("Fan");
 		
 			d2.heal(40);
-			System.out.println("After changes");
+			System.out.println("....After changes");
+			System.out.println("                     /\\         /\\__");
+			System.out.println("                   // \\       (  0 )_____/\\            __");
+			System.out.println("                  // \\ \\     (vv          o|          /^v\\");
+			System.out.println("                //    \\ \\   (vvvv  ___-----^        /^^/\\vv\\");
+			System.out.println("              //  /     \\ \\ |vvvvv/               /^^/    \\v\\");
+			System.out.println("             //  /       (\\\\/vvvv/              /^^/       \\v\\");
+			System.out.println("            //  /  /  \\ (  /vvvv/              /^^/---(     \\v\\");
+			System.out.println("           //  /  /    \\( /vvvv/----(O        /^^/           \\v\\");
+			System.out.println("          //  /  /  \\  (/vvvv/               /^^/             \\v|");
+			System.out.println("        //  /  /    \\( vvvv/                /^^/               ||");
+			System.out.println("       //  /  /    (  vvvv/                 |^^|              //");
+			System.out.println("      //  / /    (  |vvvv|                  /^^/            //");
+			System.out.println("     //  / /   (    \\vvvvv\\          )-----/^^/           //");
+			System.out.println("    // / / (          \\vvvvv\\            /^^^/          //");
+			System.out.println("   /// /(               \\vvvvv\\        /^^^^/          //");
+			System.out.println("  ///(              )-----\\vvvvv\\    /^^^^/-----(      \\\\");
+			System.out.println(" //(                        \\vvvvv\\/^^^^/               \\\\");
+			System.out.println("/(                            \\vvvv^^^/                 //");
+			System.out.println("                                \\vv^/         /        //");
+			System.out.println("                                             /<______//");
+			System.out.println("                                            <<<------/");
+			System.out.println("                                             \\<");
+			System.out.println("                                               \\");
 			System.out.println(dragons);
 			
 			System.out.println("Do you want to make your own dragon?(Hint: say \"YES!\") ");
@@ -260,7 +265,7 @@ public class DragonDriver {
 	public static void sleep() {
 		
 		try {
-		    Thread.sleep(2000);                 //1000 milliseconds is one second.
+		    Thread.sleep(500);                 //1000 milliseconds is one second.
 		} catch(InterruptedException ex) {
 		    Thread.currentThread().interrupt();
 		}
